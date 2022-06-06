@@ -25,6 +25,7 @@ class ValueFragment : BaseFragment<FragmentValueBinding, ViewModel>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
     }
     override fun initViewModel() {
         super.initViewModel()
@@ -48,8 +49,5 @@ class ValueFragment : BaseFragment<FragmentValueBinding, ViewModel>() {
             viewModel.list.add("+")
         }
 
-        viewModel.counter.observe(viewLifecycleOwner, Observer { counter->
-            binding.textCounter.text = counter.toString()
-        })
     }
 }

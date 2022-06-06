@@ -3,19 +3,29 @@ package com.arstan.counterapp.ui.notifications
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import android.widget.Adapter
 import com.arstan.counterapp.Base.BaseFragment
 import com.arstan.counterapp.ViewModel.ViewModel
+import com.arstan.counterapp.adapter
 import com.arstan.counterapp.databinding.FragmentHistoryBinding
 
 class HistoryFragment : BaseFragment<FragmentHistoryBinding, ViewModel>() {
+    lateinit var adapter: adapter
+    var info: ArrayList<String> = ArrayList<String>()
     override fun inflateViewBinding(inflater: LayoutInflater): FragmentHistoryBinding {
         binding = FragmentHistoryBinding.inflate(inflater)
         return binding
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun initViewModel() {
+        super.initViewModel()
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        adapter = adapter(viewModel.list)
+        binding.recycler.adapter = adapter
 
+    }
 }
