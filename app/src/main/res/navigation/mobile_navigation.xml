@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.arstan.counterapp.ui.home.ValueFragment"
+        android:name="com.arstan.counterapp.ui.ValueFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_value" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.arstan.counterapp.ui.dashboard.CounterFragment"
+        android:name="com.arstan.counterapp.ui.CounterFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_counter" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.arstan.counterapp.ui.notifications.HistoryFragment"
+        android:name="com.arstan.counterapp.ui.HistoryFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_history" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.arstan.counterapp.ViewModel
+package com.arstan.counterapp.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

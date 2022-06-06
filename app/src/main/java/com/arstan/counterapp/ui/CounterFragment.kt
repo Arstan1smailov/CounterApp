@@ -1,15 +1,12 @@
-package com.arstan.counterapp.ui.dashboard
+package com.arstan.counterapp.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.arstan.counterapp.Base.BaseFragment
-import com.arstan.counterapp.ViewModel.ViewModel
+import com.arstan.counterapp.base.BaseFragment
+import com.arstan.counterapp.viewModel.ViewModel
 import com.arstan.counterapp.databinding.FragmentCounterBinding
-import com.arstan.counterapp.ui.home.ValueFragment
 
 class CounterFragment :
     BaseFragment<FragmentCounterBinding, ViewModel>() {

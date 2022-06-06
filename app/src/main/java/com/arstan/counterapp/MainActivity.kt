@@ -8,7 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.arstan.counterapp.ViewModel.ViewModel
+import com.arstan.counterapp.viewModel.ViewModel
 import com.arstan.counterapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
